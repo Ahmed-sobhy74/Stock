@@ -1,0 +1,795 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>عرض ستوكيرا</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="عرض تسويقي لستوكيرا — استوكات ملابس أوروبية، قدام السراج مول، مدينة نصر. مقدم من Sahab Agency.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: the shop at night — ink-black rail with the logo's gold, garment hang-tags (punched hole + string) as the card system, barcodes and size codes as data. Single deliberate brand look. */
+:root{
+  --ink:#0F0E0B;
+  --ink-2:#1A1814;
+  --ink-3:#2A2620;
+  --gold:#F2B705;
+  --gold-2:#FFD55C;
+  --tag:#EEE6D3;
+  --tag-2:#E2D6BB;
+  --tag-ink:#1C1A15;
+  --muted:#A69E8C;
+  --tag-muted:#6B6250;
+  --eu:#3253D8;
+  --red:#D9452B;
+  --green:#2E9E62;
+  --display:"Alexandria","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --body:"IBM Plex Sans Arabic",system-ui,"Segoe UI",Tahoma,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{direction:rtl;scroll-behavior:smooth}
+body{background:var(--ink);color:#F1ECE0;font-family:var(--body);font-size:16px;line-height:1.75;margin:0;overflow-x:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:80px;position:relative}
+.band{background:var(--ink-2)}
+.paper{background:var(--tag);color:var(--tag-ink)}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.3;text-wrap:balance;margin:0}
+h2{font-size:clamp(28px,4.4vw,46px)}
+h3{font-size:20px}
+p{margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;color:var(--gold);margin-bottom:12px;text-transform:uppercase}
+.eyebrow::before{content:"";width:10px;height:10px;border-radius:50%;border:2px solid currentColor}
+.paper .eyebrow{color:#9A6F00}
+.lead{color:var(--muted);max-width:62ch;margin-top:12px;margin-bottom:40px}
+.paper .lead{color:var(--tag-muted)}
+.num{font-family:var(--display);font-variant-numeric:tabular-nums}
+.mono{font-family:var(--mono)}
+.gold{color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* progress */
+.progress{position:fixed;top:0;right:0;left:0;height:3px;z-index:20;pointer-events:none;padding-top:env(safe-area-inset-top,0px)}
+.progress i{display:block;height:3px;background:var(--gold);transform-origin:right;transform:scaleX(0)}
+
+/* ---------- HERO ---------- */
+.hero{padding-block:36px 0;overflow:hidden;position:relative;background:radial-gradient(90% 70% at 15% 10%,#2A2210 0%,var(--ink) 60%)}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .disc{width:58px;height:58px;border-radius:50%;background:#000;border:2px solid var(--gold);display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:11px;letter-spacing:.06em;color:var(--gold);box-shadow:0 0 0 4px #000,0 0 0 5px #2F6BD8}
+.logo b{display:block;font-family:var(--display);font-size:20px;color:#fff;line-height:1.2}
+.logo small{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--gold)}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:center;margin-top:40px}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr;gap:12px}}
+.hero h1{font-size:clamp(38px,6.6vw,78px);line-height:1.2;color:#fff;font-weight:900}
+.hero h1 .w{display:inline-block;animation:rise .9s var(--ease) both}
+.hero h1 .gold{color:var(--gold)}
+@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+.hero .sub{font-size:clamp(17px,2vw,20px);max-width:46ch;margin-top:18px;color:#D9D2C2;animation:rise .9s .45s var(--ease) both}
+.meta{display:flex;gap:28px 36px;flex-wrap:wrap;margin-top:32px;padding-top:20px;border-top:1px solid var(--ink-3);font-size:14px;color:var(--muted);animation:rise .9s .6s var(--ease) both}
+.meta b{display:block;color:#fff;font-size:15px}
+
+/* hang tag */
+.tagstage{position:relative;height:420px;display:flex;justify-content:center}
+@media (max-width:860px){.tagstage{height:360px}}
+.rod{position:absolute;top:18px;inset-inline:6%;height:6px;border-radius:6px;background:linear-gradient(#5b5446,#2b271f)}
+.hang{position:absolute;top:21px;transform-origin:50% 0;animation:swing 4.8s ease-in-out infinite}
+.hang.h1{right:6%;animation-delay:-.6s;z-index:2}
+.hang.h2{left:2%;top:21px;animation-duration:5.6s;animation-delay:-2s;z-index:1}
+@media (max-width:480px){.hang.h1{right:0}.hang.h2{left:0}.htag{width:200px}.htag.small{width:140px}}
+@keyframes swing{0%,100%{transform:rotate(4deg)}50%{transform:rotate(-4deg)}}
+.string{width:2px;height:70px;margin:0 auto;background:var(--muted)}
+.htag{width:230px;background:var(--tag);color:var(--tag-ink);border-radius:10px 10px 14px 14px;padding:34px 20px 20px;position:relative;box-shadow:0 30px 50px -20px rgba(0,0,0,.7);clip-path:polygon(22% 0,78% 0,100% 12%,100% 100%,0 100%,0 12%)}
+.htag::before{content:"";position:absolute;top:12px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--ink);box-shadow:inset 0 0 0 3px var(--tag-2)}
+.htag.small{width:170px;padding:30px 16px 16px}
+.htag .brand{font-family:var(--display);font-weight:900;font-size:24px;letter-spacing:.04em;text-align:center}
+.htag .eu{display:flex;justify-content:center;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--eu);margin-top:4px}
+.htag .eu svg{width:18px;height:18px}
+.htag hr{border:0;border-top:1.5px dashed var(--tag-2);margin:12px 0}
+.htag .row{display:flex;justify-content:space-between;font-size:13px;gap:8px}
+.htag .row span:first-child{color:var(--tag-muted)}
+.htag .sizes{display:flex;gap:6px;margin-top:10px;justify-content:center}
+.htag .sizes i{font-style:normal;font-family:var(--mono);font-size:11px;border:1.5px solid var(--tag-ink);border-radius:4px;padding:1px 6px}
+.htag .sizes i.on{background:var(--tag-ink);color:var(--gold)}
+.barcode{height:34px;margin-top:12px;background:repeating-linear-gradient(90deg,var(--tag-ink) 0 2px,transparent 2px 4px,var(--tag-ink) 4px 5px,transparent 5px 8px,var(--tag-ink) 8px 11px,transparent 11px 12px)}
+.htag .code{font-family:var(--mono);font-size:10.5px;text-align:center;letter-spacing:.2em;margin-top:4px;color:var(--tag-muted)}
+.htag .big{font-family:var(--display);font-weight:900;font-size:40px;line-height:1.1;text-align:center}
+.htag .cap{font-size:12.5px;text-align:center;color:var(--tag-muted)}
+
+.marquee{margin-top:56px;background:var(--gold);color:var(--ink);overflow:hidden;white-space:nowrap;padding-block:12px;transform:rotate(-1.5deg);margin-inline:-30px}
+.marquee .track{display:inline-flex;animation:slide 30s linear infinite;font-family:var(--display);font-weight:800;font-size:20px}
+.marquee .track span{display:inline-flex;align-items:center;gap:26px;padding-inline-end:26px}
+.marquee .track span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--ink)}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(50%)}}
+
+/* ---------- STATUS ---------- */
+.status{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.st{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:16px;padding:24px;min-width:0;position:relative;overflow:hidden}
+.st .lbl{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.06em}
+.st .n{font-family:var(--display);font-weight:900;font-size:62px;line-height:1.1;color:#fff}
+.st .n small{font-size:20px;color:var(--muted);font-weight:700}
+.st p{font-size:14.5px;color:var(--muted);margin-top:6px}
+.s1{grid-column:span 4}.s2{grid-column:span 4}.s3{grid-column:span 4}.s4{grid-column:span 12}
+@media (max-width:860px){.s1,.s2,.s3{grid-column:span 12}}
+.st.warn{border-color:#5a3c12}
+.st.warn .n{color:var(--gold)}
+.fakebar{display:flex;height:12px;border-radius:99px;overflow:hidden;margin-top:14px;background:var(--ink-3)}
+.fakebar i{display:block;height:100%}
+.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:6px}
+.ck{display:flex;align-items:center;gap:12px;background:var(--ink);border:1px solid var(--ink-3);border-radius:12px;padding:12px 14px;font-size:15px}
+.ck .x{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:14px}
+.ck .x.no{background:rgba(217,69,43,.15);color:#FF8A70;border:1px solid rgba(217,69,43,.5)}
+.ck .x.weak{background:rgba(242,183,5,.12);color:var(--gold);border:1px solid rgba(242,183,5,.45)}
+.ck small{display:block;color:var(--muted);font-size:12.5px;line-height:1.4}
+.callout{margin-top:36px;font-family:var(--display);font-weight:800;font-size:clamp(22px,3.2vw,32px);text-align:center;color:#fff}
+.callout em{font-style:normal;color:var(--gold)}
+.paper .callout{color:var(--tag-ink)}
+.paper .callout em{color:#A87A00}
+
+/* ---------- COMPETITORS ---------- */
+.comp{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:start}
+@media (max-width:900px){.comp{grid-template-columns:1fr}}
+.panel{background:#F7F2E6;border:1.5px solid var(--tag-2);border-radius:16px;padding:22px;min-width:0}
+.panel .lbl{font-family:var(--mono);font-size:12px;color:var(--tag-muted);letter-spacing:.06em}
+.map{width:100%;height:auto;display:block;margin-top:8px}
+.map text{font-family:var(--body);font-size:12px;fill:var(--tag-ink)}
+.ping{transform-origin:center;transform-box:fill-box;animation:ping 2.2s var(--ease) infinite}
+@keyframes ping{0%{transform:scale(.6);opacity:.9}100%{transform:scale(3);opacity:0}}
+.bars{display:grid;gap:11px;margin-top:14px}
+.bar{display:grid;grid-template-columns:118px 1fr 74px;gap:10px;align-items:center;font-size:14px}
+.bar .t{height:14px;background:var(--tag-2);border-radius:99px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--tag-ink);border-radius:99px;transform-origin:right;transition:transform 1.2s var(--ease)}
+.bar .v{text-align:left;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:12.5px}
+.bar .v b{color:#9A6F00}
+.bar.us{font-weight:700}
+.bar.us .t{background:repeating-linear-gradient(-45deg,#e6d8b6 0 6px,#d9c79c 6px 12px)}
+.bar.us .v{color:var(--red);font-weight:700}
+@media (max-width:480px){.bar{grid-template-columns:92px 1fr 64px;font-size:13px}}
+.pains{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
+.pain{border-top:3px solid var(--tag-ink);padding-top:12px}
+.pain b{display:block;font-family:var(--display);font-weight:800;font-size:18px}
+.pain p{font-size:14.5px;color:var(--tag-muted);margin-top:4px}
+.pain .flip{display:block;margin-top:8px;font-size:14px;color:#1F6B3F;font-weight:700}
+.src{font-size:12.5px;color:var(--tag-muted);margin-top:14px}
+.band .src,.hero .src{color:var(--muted)}
+
+/* ---------- AD LIBRARY ---------- */
+.adl{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+@media (max-width:900px){.adl{grid-template-columns:1fr}}
+.counts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.count{background:var(--ink);border:1px solid var(--ink-3);border-radius:14px;padding:18px}
+.count .n{font-family:var(--display);font-weight:900;font-size:46px;line-height:1;color:var(--gold)}
+.count p{font-size:13.5px;color:var(--muted);margin-top:8px}
+.count .q{font-family:var(--mono);font-size:12px;color:#fff;background:var(--ink-3);border-radius:6px;padding:2px 8px;display:inline-block;margin-top:8px}
+.pat{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
+.pat li{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start;background:var(--ink);border:1px solid var(--ink-3);border-radius:12px;padding:12px 14px}
+.pat li .pc{font-family:var(--mono);font-size:12px;color:var(--ink);background:var(--gold);border-radius:6px;text-align:center;padding:3px 0;font-weight:600}
+.pat li b{display:block;font-size:15.5px;color:#fff}
+.pat li span{font-size:13.5px;color:var(--muted)}
+.bench{background:var(--tag);color:var(--tag-ink);border-radius:16px;padding:24px;position:relative}
+.bench h3{font-size:22px}
+.bench .sub{font-size:13.5px;color:var(--tag-muted);margin-top:4px}
+.kv{display:grid;gap:0;margin-top:14px}
+.kv div{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1.5px dashed var(--tag-2)}
+.kv div:last-child{border-bottom:0}
+.kv dt{font-size:14.5px}
+.kv dt small{display:block;font-size:12px;color:var(--tag-muted);font-family:var(--mono)}
+.kv dd{margin:0;font-family:var(--display);font-weight:900;font-size:24px;font-variant-numeric:tabular-nums;text-align:left;white-space:nowrap}
+.kv dd small{font-size:13px;font-weight:700;color:var(--tag-muted)}
+.kv .est dd{color:#9A6F00}
+.note{font-size:12.5px;color:var(--tag-muted);margin-top:12px;line-height:1.6}
+.gap{margin-top:24px;border:1.5px dashed var(--gold);border-radius:14px;padding:20px}
+.gap b{font-family:var(--display);font-weight:800;font-size:20px;color:var(--gold)}
+.gap p{color:#E5DFD0;font-size:15px;margin-top:6px}
+
+/* ---------- POSITIONING ---------- */
+.thesis{font-family:var(--display);font-weight:900;font-size:clamp(32px,5.6vw,64px);line-height:1.25;color:#fff;max-width:17ch}
+.thesis em{font-style:normal;color:var(--gold);position:relative}
+.strike{position:relative;display:inline-block;color:var(--muted)}
+.strike::after{content:"";position:absolute;right:-4px;left:-4px;top:55%;height:5px;background:var(--red);border-radius:3px;transform-origin:right;animation:cross 1.2s .6s var(--ease) both}
+@keyframes cross{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.pill3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:44px}
+.pill3>div{border-top:2px solid var(--gold);padding-top:14px}
+.pill3 b{display:block;font-size:18px;color:#fff;margin-bottom:4px;font-family:var(--display);font-weight:700}
+.pill3 p{font-size:15px;color:var(--muted)}
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+@media (max-width:820px){.aud{grid-template-columns:1fr}}
+.au{background:var(--ink);border:1px solid var(--ink-3);border-radius:14px;padding:20px;min-width:0}
+.au .sz{display:inline-block;font-family:var(--mono);font-size:12px;border:1.5px solid var(--gold);color:var(--gold);border-radius:5px;padding:1px 8px;margin-bottom:8px}
+.au b{display:block;font-family:var(--display);font-weight:700;font-size:18px;color:#fff}
+.au p{font-size:14.5px;color:var(--muted);margin-top:4px}
+
+/* ---------- ANGLES ---------- */
+.angles{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;margin-top:8px}
+.ang{background:#F7F2E6;color:var(--tag-ink);border-radius:10px 10px 14px 14px;padding:30px 20px 20px;position:relative;clip-path:polygon(16% 0,84% 0,100% 9%,100% 100%,0 100%,0 9%);transition:transform .45s var(--ease);min-width:0}
+.ang::before{content:"";position:absolute;top:11px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--tag);box-shadow:inset 0 0 0 2.5px var(--tag-2)}
+.ang:hover{transform:translateY(-6px) rotate(-1deg)}
+.ang .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ang .fmt{font-family:var(--mono);font-size:11px;letter-spacing:.06em;background:var(--tag-ink);color:var(--gold);padding:2px 8px;border-radius:4px}
+.ang .qty{font-family:var(--mono);font-size:12px;color:var(--tag-muted)}
+.ang h3{font-size:20px;margin-top:10px}
+.ang p{font-size:14px;color:var(--tag-muted);margin-top:4px}
+.ang .hook{margin-top:12px;padding-top:10px;border-top:1.5px dashed var(--tag-2);font-size:14.5px;font-weight:700}
+.ang .hook::before{content:"HOOK";display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:#9A6F00;font-weight:600}
+.mixwrap{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;margin-top:44px}
+@media (max-width:860px){.mixwrap{grid-template-columns:1fr}}
+.mix{display:flex;height:18px;border-radius:99px;overflow:hidden}
+.mix i{display:block;height:100%}
+.mixkey{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:13px;color:var(--tag-muted)}
+.mixkey span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-left:6px;background:var(--c);vertical-align:middle}
+.rule{background:var(--tag-ink);color:var(--tag);border-radius:16px;padding:24px}
+.rule .q{font-family:var(--display);font-weight:800;font-size:clamp(20px,2.6vw,26px);line-height:1.4}
+.rule .q em{font-style:normal;color:var(--gold)}
+.rule p{font-size:14.5px;color:#BDB3A0;margin-top:10px}
+
+/* ---------- SERVICES ---------- */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.sv{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:16px;padding:22px;transition:transform .4s var(--ease),border-color .4s;min-width:0;display:flex;flex-direction:column}
+.sv:hover{transform:translateY(-4px);border-color:var(--gold)}
+.sv svg{width:32px;height:32px;stroke:var(--gold);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.sv h3{font-size:19px;color:#fff;margin-top:12px}
+.sv p{font-size:14px;color:var(--muted);margin-top:4px}
+.sv ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:5px;font-size:13.5px;color:#D9D2C2}
+.sv ul li{display:flex;gap:8px}
+.sv ul li::before{content:"";flex:0 0 6px;height:6px;margin-top:9px;border-radius:50%;background:var(--gold)}
+.sv .qty{font-family:var(--mono);font-size:12px;color:var(--gold);margin-top:auto;padding-top:12px}
+.sv.extra{border-style:dashed;background:transparent}
+.sv.extra .qty{color:var(--muted)}
+
+.growth{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px;align-items:stretch}
+@media (max-width:860px){.growth{grid-template-columns:1fr}}
+.agent{background:var(--tag);color:var(--tag-ink);border-radius:18px;padding:24px;min-width:0}
+.agent h3{font-size:22px}
+.agent .sub{font-size:14px;color:var(--tag-muted);margin-top:4px}
+.chat{display:grid;gap:10px;margin-top:18px}
+.bub{max-width:82%;padding:10px 14px;border-radius:16px;font-size:14.5px;line-height:1.55;opacity:1}
+.bub.c{justify-self:start;background:#fff;border:1px solid var(--tag-2);border-bottom-right-radius:4px}
+.bub.a{justify-self:end;background:var(--tag-ink);color:#F1ECE0;border-bottom-left-radius:4px}
+.bub.a small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--gold);letter-spacing:.08em;margin-bottom:2px}
+.chat.play .bub{animation:pop .5s var(--ease) both}
+.chat.play .bub:nth-child(2){animation-delay:.5s}
+.chat.play .bub:nth-child(3){animation-delay:1.1s}
+.chat.play .bub:nth-child(4){animation-delay:1.6s}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+.agent .hand{font-size:13px;color:var(--tag-muted);margin-top:14px;border-top:1.5px dashed var(--tag-2);padding-top:10px}
+
+.adplan{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:18px;padding:24px;min-width:0}
+.adplan h3{font-size:22px;color:#fff}
+.adplan .sub{font-size:14px;color:var(--muted);margin-top:4px}
+.camps{display:grid;gap:12px;margin-top:16px}
+.camp{border:1px solid var(--ink-3);border-radius:12px;padding:12px 14px;background:var(--ink)}
+.camp .k{font-family:var(--mono);font-size:11.5px;color:var(--gold);letter-spacing:.04em;word-break:break-all}
+.camp b{display:block;color:#fff;font-size:15.5px;margin-top:2px}
+.camp p{font-size:13.5px;color:var(--muted)}
+.split{display:flex;height:30px;border-radius:8px;overflow:hidden;margin-top:16px;font-family:var(--mono);font-size:12px}
+.split i{display:grid;place-items:center;font-style:normal;color:var(--ink);font-weight:600;white-space:nowrap;overflow:hidden}
+.splitkey{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-top:8px}
+
+/* ---------- MONTH ---------- */
+.month{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative}
+@media (max-width:860px){.month{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.month{grid-template-columns:1fr}}
+.wk{background:#F7F2E6;border:1.5px solid var(--tag-2);border-radius:14px;padding:20px;min-width:0}
+.wk .n{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;color:var(--tag-muted)}
+.wk .n b{font-family:var(--display);font-weight:900;font-size:34px;color:var(--tag-ink);line-height:1}
+.wk h3{font-size:19px;margin-top:10px}
+.wk ul{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:4px;font-size:14px;color:var(--tag-muted)}
+.wk ul li::before{content:"— ";color:#9A6F00}
+.rail{height:6px;border-radius:6px;background:var(--tag-2);margin:28px 0 0;position:relative;overflow:hidden}
+.rail i{position:absolute;inset:0;background:linear-gradient(270deg,var(--gold),#C78F00);transform-origin:right;animation:fillr 6s var(--ease) infinite}
+@keyframes fillr{0%{transform:scaleX(.02)}80%,100%{transform:scaleX(1)}}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:36px}
+.kpi{border-right:3px solid #9A6F00;padding-right:14px}
+.kpi .mono{font-size:11.5px;color:#9A6F00}
+.kpi b{display:block;font-family:var(--display);font-weight:700;font-size:16.5px;margin-top:2px}
+.kpi p{font-size:13.5px;color:var(--tag-muted)}
+
+/* ---------- PACKAGE ---------- */
+.pkg{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+@media (max-width:900px){.pkg{grid-template-columns:1fr}}
+@property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
+.offer{border-radius:22px;border:3px solid transparent;background:linear-gradient(var(--tag),var(--tag)) padding-box,conic-gradient(from var(--ang),var(--gold),#7A5A00,var(--gold-2),var(--gold)) border-box;animation:angle 6s linear infinite;color:var(--tag-ink);overflow:hidden;box-shadow:0 40px 80px -40px rgba(242,183,5,.45);min-width:0}
+@keyframes angle{to{--ang:360deg}}
+.offer .head{background:var(--tag-ink);color:#F1ECE0;padding:26px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.offer .head small{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--gold)}
+.offer .head h3{font-size:34px;color:#fff;margin-top:2px}
+.offer .head p{font-size:14.5px;color:#BDB3A0;margin-top:4px}
+.pricetag{background:var(--gold);color:var(--ink);border-radius:10px;padding:10px 16px;text-align:center;transform:rotate(-3deg)}
+.pricetag b{display:block;font-family:var(--display);font-weight:900;font-size:36px;line-height:1.1;font-variant-numeric:tabular-nums}
+.pricetag span{font-size:12.5px;font-weight:700}
+.offer ul{list-style:none;margin:0;padding:10px 26px 6px;columns:2;column-gap:28px}
+@media (max-width:600px){.offer ul{columns:1}}
+.offer li{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--tag-2);font-size:14.5px;break-inside:avoid}
+.offer li i{font-style:normal;flex:0 0 20px;font-weight:700;color:#9A6F00}
+.offer .foot{margin:10px 26px 26px;border:2px solid var(--tag-ink);border-radius:8px;padding:14px;display:grid;gap:8px;font-size:14px}
+.offer .foot div{display:flex;justify-content:space-between;gap:12px}
+.offer .foot .tot{font-family:var(--display);font-weight:900;font-size:20px;border-top:2px solid var(--tag-ink);padding-top:8px}
+.side{display:grid;gap:16px}
+.box{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:16px;padding:20px}
+.box b{display:block;font-family:var(--display);font-weight:700;font-size:18px;color:#fff}
+.box p{font-size:14.5px;color:var(--muted);margin-top:6px}
+.box.dash{border-style:dashed;border-color:var(--gold)}
+.box .tagline{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--ink);background:var(--gold);padding:1px 8px;border-radius:4px;margin-bottom:6px}
+
+.next{margin-top:56px;text-align:center}
+.next h2{color:#fff}
+.next p{color:var(--muted);max-width:56ch;margin:12px auto 0}
+footer{border-top:1px solid var(--ink-3);padding-block:28px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* reveal: visible at rest, small lift when it enters */
+.js .rv{transition:transform .8s var(--ease),opacity .8s var(--ease)}
+.js .rv.pre{transform:translateY(18px);opacity:.35}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv.pre{transform:none;opacity:1}
+}
+
+/* ---------- PRINT / PDF ---------- */
+@page{size:A4;margin:0}
+@media print{
+  html,body{background:var(--ink)}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .progress,.marquee{display:none!important}
+  .js .rv.pre{transform:none;opacity:1}
+  section{padding-block:44px;break-inside:auto}
+  .pagebreak{break-before:page}
+  .st,.panel,.ang,.sv,.wk,.offer,.bench,.agent,.adplan,.box,.au,.count,.pat li,.pain,.camp{break-inside:avoid}
+  .hang{transform:rotate(-2deg)}
+  .hang.h2{transform:rotate(3deg)}
+  .bar .t i{transform:none!important}
+  .offer{background:linear-gradient(var(--tag),var(--tag)) padding-box,linear-gradient(var(--gold),var(--gold)) border-box;box-shadow:none}
+  .hero{min-height:auto}
+}
+</style>
+
+<div class="progress" aria-hidden="true"><i id="prog"></i></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="logo">
+        <div class="disc" aria-hidden="true">STOCKERA</div>
+        <div><b>ستوكيرا</b><small>EUROPEAN STOCK · NASR CITY</small></div>
+      </div>
+      <span>عرض تسويقي · أكتوبر 2026 · مقدم من Sahab Agency</span>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1><span class="w">استوك</span> <span class="w" style="animation-delay:.08s">أوروبي</span> <span class="w" style="animation-delay:.16s">جديد،</span><br><span class="w gold" style="animation-delay:.26s">والناس</span> <span class="w gold" style="animation-delay:.34s">لسه</span> <span class="w gold" style="animation-delay:.42s">ماتعرفوش.</span></h1>
+        <p class="sub">خطة تسويق لستوكيرا، فرع مدينة نصر قدام السراج مول: إزاي نحوّل صفحة جديدة لمحل الناس بتقصده بالاسم، رجالي وحريمي وأطفال.</p>
+        <div class="meta">
+          <div><b>العميل</b>Stockera · ستوكيرا</div>
+          <div><b>المكان</b>مدينة نصر، قدام السراج مول</div>
+          <div><b>المرحلة</b>أول شهر تعاقد</div>
+        </div>
+      </div>
+
+      <div class="tagstage" aria-hidden="true">
+        <div class="rod"></div>
+        <div class="hang h1">
+          <div class="string"></div>
+          <div class="htag">
+            <div class="brand">STOCKERA</div>
+            <div class="eu"><svg viewBox="0 0 24 24"><g fill="#3253D8"><circle cx="12" cy="3.5" r="1.3"/><circle cx="16.25" cy="4.64" r="1.3"/><circle cx="19.36" cy="7.75" r="1.3"/><circle cx="20.5" cy="12" r="1.3"/><circle cx="19.36" cy="16.25" r="1.3"/><circle cx="16.25" cy="19.36" r="1.3"/><circle cx="12" cy="20.5" r="1.3"/><circle cx="7.75" cy="19.36" r="1.3"/><circle cx="4.64" cy="16.25" r="1.3"/><circle cx="3.5" cy="12" r="1.3"/><circle cx="4.64" cy="7.75" r="1.3"/><circle cx="7.75" cy="4.64" r="1.3"/></g></svg>EU STOCK · NEW</div>
+            <hr>
+            <div class="row"><span>القسم</span><b>رجالي · حريمي · أطفال</b></div>
+            <div class="row"><span>الحالة</span><b>جديد، مش مستعمل</b></div>
+            <div class="row"><span>الفرع</span><b>قدام السراج مول</b></div>
+            <div class="sizes"><i>S</i><i class="on">M</i><i>L</i><i>XL</i><i>KIDS</i></div>
+            <div class="barcode"></div>
+            <div class="code">SAHAB · 2026 · 10</div>
+          </div>
+        </div>
+        <div class="hang h2">
+          <div class="string" style="height:150px"></div>
+          <div class="htag small">
+            <div class="cap">ريلز في الشهر</div>
+            <div class="big">16</div>
+            <div class="cap">بأفكار وسكتشات وأنجلز</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>16 ريل في الشهر</span><span>سكتشات</span><span>فوتوشوت للمنتجات</span><span>تصميمات يومية</span><span>إعلانات Meta</span><span>Meta Business Agent</span><span>Google Maps</span><span>تيك توك وإنستجرام</span>
+      <span>16 ريل في الشهر</span><span>سكتشات</span><span>فوتوشوت للمنتجات</span><span>تصميمات يومية</span><span>إعلانات Meta</span><span>Meta Business Agent</span><span>Google Maps</span><span>تيك توك وإنستجرام</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STATUS ============ -->
+<section id="status">
+  <div class="wrap">
+    <div class="eyebrow">الوضع دلوقتي</div>
+    <h2>بيج شكلها كبير، ومحل لسه محدش بيتكلم عنه</h2>
+    <p class="lead">الأرقام على الصفحة مش بتعبّر عن جمهور حقيقي. ودي النقطة اللي هنبدأ منها، من غير ما نجمّل الصورة.</p>
+
+    <div class="status">
+      <div class="st warn s1 rv">
+        <div class="lbl">FOLLOWERS · FACEBOOK</div>
+        <div class="n">13K</div>
+        <p>متابعين متشتريين، مش جمهور من المنطقة. ميتا بتعرض البوست الأول على المتابعين، ولما ميتفاعلوش، الوصول بيقل.</p>
+        <div class="fakebar" aria-hidden="true"><i style="flex:92;background:#4a3f2a"></i><i style="flex:8;background:var(--gold)"></i></div>
+      </div>
+      <div class="st s2 rv">
+        <div class="lbl">REELS</div>
+        <div class="n">2 <small>ريل بس</small></div>
+        <p>مفيش محتوى كفاية يعرّف الناس بالمحل والتشكيلة. الريلز هي أرخص طريقة توصل لناس جديدة في مدينة نصر.</p>
+      </div>
+      <div class="st s3 rv">
+        <div class="lbl">REVIEWS</div>
+        <div class="n">0 <small>تقييم</small></div>
+        <p>الصفحة مكتوب عليها «Not yet rated». وأقرب منافس ليه مئات التقييمات على جوجل.</p>
+      </div>
+      <div class="st s4 rv">
+        <div class="lbl">CHANNELS</div>
+        <div class="checks">
+          <div class="ck"><span class="x no">✕</span><div>Google Business Profile<small>المحل مش ظاهر على الخريطة</small></div></div>
+          <div class="ck"><span class="x no">✕</span><div>تيك توك<small>مفيش حساب</small></div></div>
+          <div class="ck"><span class="x weak">!</span><div>إنستجرام<small>موجود بس ضعيف</small></div></div>
+          <div class="ck"><span class="x no">✕</span><div>نظام تقييمات<small>مفيش طلب ريفيو من العملاء</small></div></div>
+          <div class="ck"><span class="x no">✕</span><div>رد آلي على الرسايل<small>كل رسالة مستنية حد</small></div></div>
+        </div>
+      </div>
+    </div>
+    <p class="callout">المشكلة مش في البضاعة. المشكلة إن <em>ستوكيرا لسه ملهاش سمعة</em> أونلاين.</p>
+  </div>
+</section>
+
+<!-- ============ COMPETITORS ============ -->
+<section id="competitors" class="paper pagebreak">
+  <div class="wrap">
+    <div class="eyebrow">المنافسين حوالين السراج مول</div>
+    <h2>محلات الاستوك في مدينة نصر كتير، والثقة فيهم قليلة</h2>
+    <p class="lead">بصّينا على محلات الاستوك اللي في نطاق 3 كيلو من الفرع، وقرينا تقييماتهم على جوجل. الأرقام دي من Google Maps يوم 23 أكتوبر 2026.</p>
+
+    <div class="comp">
+      <div class="panel rv">
+        <div class="lbl">MAP · رسم توضيحي للمواقع</div>
+        <svg class="map" viewBox="0 0 600 320" role="img" aria-label="خريطة توضيحية لمواقع محلات الاستوك حوالين السراج مول">
+          <rect x="0" y="0" width="600" height="320" rx="12" fill="#EFE7D4"/>
+          <path d="M20 250 C150 238 300 232 590 226" stroke="#D8C9A6" stroke-width="16" fill="none"/>
+          <path d="M70 20 L120 310" stroke="#D8C9A6" stroke-width="12" fill="none"/>
+          <path d="M240 20 L215 310" stroke="#D8C9A6" stroke-width="10" fill="none"/>
+          <path d="M330 20 L320 310" stroke="#D8C9A6" stroke-width="10" fill="none"/>
+          <text x="440" y="218">مكرم عبيد / مصطفى النحاس</text>
+          <text x="20" y="40">عباس العقاد</text>
+          <text x="336" y="40">حسن المأمون</text>
+          <g fill="#6B6250">
+            <circle cx="99" cy="142" r="6"/><text x="110" y="138">Brando</text>
+            <circle cx="92" cy="159" r="6"/><text x="104" y="176">Outlet Brands</text>
+            <circle cx="85" cy="63" r="6"/><text x="97" y="67">Square Stock</text>
+            <circle cx="112" cy="114" r="5"/>
+            <circle cx="175" cy="222" r="6"/><text x="110" y="214">لؤلؤة</text>
+            <circle cx="311" cy="217" r="6"/><text x="320" y="206">حنفي ستوك</text>
+            <circle cx="317" cy="74" r="7"/><text x="330" y="80">Nile Stock</text>
+            <circle cx="548" cy="266" r="7"/><text x="452" y="296">فاشونستا بالكيلو</text>
+            <circle cx="200" cy="264" r="5"/>
+          </g>
+          <circle cx="221" cy="270" r="9" fill="#F2B705" class="ping"/>
+          <circle cx="221" cy="270" r="9" fill="#F2B705" stroke="#1C1A15" stroke-width="3"/>
+          <rect x="232" y="276" width="150" height="26" rx="6" fill="#1C1A15"/>
+          <text x="244" y="294" style="fill:#F2B705;font-weight:700">ستوكيرا · السراج مول</text>
+        </svg>
+        <p class="src">المواقع تقريبية ومش بمقياس رسم. في نفس الشارع تقريبًا فيه «Stock Brands» قدام البنك الأهلي.</p>
+      </div>
+
+      <div class="panel rv">
+        <div class="lbl">GOOGLE REVIEWS · عدد التقييمات</div>
+        <div class="bars" id="bars">
+          <div class="bar"><span>فاشونستا بالكيلو</span><span class="t"><i style="transform:scaleX(1)"></i></span><span class="v">943 · <b>3.6★</b></span></div>
+          <div class="bar"><span>Nile Stock</span><span class="t"><i style="transform:scaleX(.477)"></i></span><span class="v">450 · <b>4.1★</b></span></div>
+          <div class="bar"><span>Outlet Brands</span><span class="t"><i style="transform:scaleX(.15)"></i></span><span class="v">141 · <b>4.2★</b></span></div>
+          <div class="bar"><span>Square Stock</span><span class="t"><i style="transform:scaleX(.075)"></i></span><span class="v">71 · <b>4.6★</b></span></div>
+          <div class="bar"><span>Brando Stock</span><span class="t"><i style="transform:scaleX(.053)"></i></span><span class="v">50 · <b>3.4★</b></span></div>
+          <div class="bar"><span>حنفي ستوك</span><span class="t"><i style="transform:scaleX(.033)"></i></span><span class="v">31 · <b>3.3★</b></span></div>
+          <div class="bar"><span>لؤلؤة للإستوكات</span><span class="t"><i style="transform:scaleX(.022)"></i></span><span class="v">21 · <b>3.9★</b></span></div>
+          <div class="bar us"><span>ستوكيرا</span><span class="t"><i style="transform:scaleX(0)"></i></span><span class="v">0 · مش موجود</span></div>
+        </div>
+        <p class="src">أغلب المنافسين تقييمهم بين 3.3 و4.2 نجوم. يعني السوق مليان، بس مفيش اسم الناس واثقة فيه بجد.</p>
+      </div>
+    </div>
+
+    <div class="pains">
+      <div class="pain rv"><b>«اللي في الإعلان مش في الفرع»</b><p>أكتر شكوى بتتكرر في تقييمات المنافسين: الفيديو بيعرض قطع، والعميل يروح ميلاقيهاش.</p><span class="flip">فرصتنا: محتوى متصور من جوه المحل كل أسبوع.</span></div>
+      <div class="pain rv"><b>«أسعار عالية على استوك»</b><p>عملاء كتير شايفين إن السعر مش سعر استوك، ومفيش وضوح في التسعير.</p><span class="flip">فرصتنا: السعر ظاهر في كل ريل وكل تصميم.</span></div>
+      <div class="pain rv"><b>«استوك ولا بالة؟»</b><p>فيه لخبطة عند الناس بين الاستوك الجديد والبالة المستعملة، والكلمة نفسها بقت مش مطمّنة.</p><span class="flip">فرصتنا: نشرح الفرق ونقولها بوضوح: جديد.</span></div>
+      <div class="pain rv"><b>«التعامل مش لطيف»</b><p>تقييمات بتشتكي من أسلوب الموظفين وإن العميل حاسس إنه متراقب وهو بيختار.</p><span class="flip">فرصتنا: نخلي فريق المحل جزء من المحتوى.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AD LIBRARY ============ -->
+<section id="adlibrary" class="band pagebreak">
+  <div class="wrap">
+    <div class="eyebrow">Meta Ad Library</div>
+    <h2>المنافسين بيعلنوا بإيه؟</h2>
+    <p class="lead">بحثنا في مكتبة إعلانات ميتا (مصر، الإعلانات الشغالة) يوم 23 أكتوبر 2026، وقرينا الإعلانات الظاهرة.</p>
+
+    <div class="adl">
+      <div class="rv">
+        <div class="counts">
+          <div class="count"><div class="n">~28</div><p>إعلان شغال حاليًا</p><span class="q">استوكات ملابس</span></div>
+          <div class="count"><div class="n">~11</div><p>إعلان شغال حاليًا</p><span class="q">استوكات مدينة نصر</span></div>
+        </div>
+        <ul class="pat">
+          <li><span class="pc">01</span><div><b>فلاير بالأسعار والخصومات</b><span>زي Dana Store و«سنتر أوروبا»: تصميم مليان كلام وعرض «3000 بـ1000». نفس الشكل عند الكل.</span></div></li>
+          <li><span class="pc">02</span><div><b>صاحب المحل بيتكلم للكاميرا</b><span>فيديو بسيط من جوه المحل، وأغلبه عن العنوان والافتتاح، زي «لمسة» بعرض الكيلو بـ1000 بدل 1200.</span></div></li>
+          <li><span class="pc">03</span><div><b>كاروسيل قطع على شماعة</b><span>زي «لقطة ستايل»: صور القطع بالسعر، من غير قصة ولا ناس.</span></div></li>
+          <li><span class="pc">04</span><div><b>إعلانات جملة للتجار</b><span>جزء كبير من النتايج بيستهدف التجار مش المستهلك، زي Loly's وJoo Stock.</span></div></li>
+        </ul>
+        <div class="gap">
+          <b>الفجوة اللي هندخل منها</b>
+          <p>مفيش حد من المنافسين بيعمل سكتشات أو محتوى قصصي أو «خمّن السعر». كله فلاير أو فيديو عنوان، وهدفه رسايل. المحتوى اللي فيه ناس وموقف هيبان وسطهم من أول يوم.</p>
+        </div>
+      </div>
+
+      <div class="bench rv">
+        <h3>أرقام السوق المصري</h3>
+        <p class="sub">مكتبة الإعلانات مش بتعرض الصرف ولا الـ CPM للإعلانات التجارية في مصر. فاعتمدنا على benchmarks منشورة لسنة 2026، محوّلة بسعر الدولار 54.4 ج.م (البنك الأهلي، 21 أكتوبر 2026).</p>
+        <dl class="kv">
+          <div><dt>CPM فيسبوك<small>Adligator · 2026</small></dt><dd>82 – 136 <small>ج.م</small></dd></div>
+          <div><dt>CPM إنستجرام<small>Adligator · 2026</small></dt><dd>109 – 190 <small>ج.م</small></dd></div>
+          <div><dt>متوسط CPM ميتا في مصر<small>AdAmigo · توقعات 2026</small></dt><dd>~158 <small>ج.م</small></dd></div>
+          <div><dt>متوسط CPC<small>AdAmigo · توقعات 2026</small></dt><dd>~14 <small>ج.م</small></dd></div>
+          <div class="est"><dt>تكلفة الرسالة (CPA) المبدئية<small>تقدير منّا · بيتأكد من أول أسبوعين</small></dt><dd>15 – 30 <small>ج.م</small></dd></div>
+        </dl>
+        <p class="note">ميتا بتحاسب على كل 1000 ظهور مهما كان هدف الحملة، فالـ CPM بيتأثر بجودة الكريتف. أرقام ستوكيرا الحقيقية هتطلع من حساب الإعلانات بعد أول أسبوعين، وعليها هنحدد الـ CPA المستهدف.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POSITIONING ============ -->
+<section id="positioning" class="pagebreak">
+  <div class="wrap">
+    <div class="eyebrow">Positioning</div>
+    <p class="thesis">مش <span class="strike">بالة</span>. استوك أوروبي جديد، و<em>اللي في الفيديو موجود على الشماعة.</em></p>
+    <div class="pill3">
+      <div class="rv"><b>جديد، ونقولها بوضوح</b><p>كلمة «استوك» بقت بتخوّف. إحنا هنشرح الفرق ونثبت إن القطعة جديدة بالتيكت بتاعها.</p></div>
+      <div class="rv"><b>اللي بتشوفه هتلاقيه</b><p>كل المحتوى متصور من جوه المحل، والجديد بينزل أول بأول. ده عكس أكبر شكوى في السوق.</p></div>
+      <div class="rv"><b>العيلة كلها في محل واحد</b><p>رجالي وحريمي وأطفال، قدام السراج مول. مشوار واحد يكفي البيت كله.</p></div>
+    </div>
+
+    <div class="aud">
+      <div class="au rv"><span class="sz">SIZE M</span><b>الأم المدبّرة</b><p>بتشتري لنفسها وللعيال، وعايزة براند كويس بسعر معقول. أكبر جمهور وأكتره تأثيرًا على الكلام في المنطقة.</p></div>
+      <div class="au rv"><span class="sz">SIZE L</span><b>الشباب والبنات</b><p>بيدوروا على Zara وH&M وPull&Bear بسعر أقل، وبيتحركوا من ريل أو تيك توك.</p></div>
+      <div class="au rv"><span class="sz">KIDS</span><b>موسم المدارس والأعياد</b><p>كسوة العيال في المواسم. هنا العروض والباكدجات بتفرق جدًا.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANGLES ============ -->
+<section id="reels" class="paper pagebreak">
+  <div class="wrap">
+    <div class="eyebrow">Reels · Angles</div>
+    <h2>16 ريل في الشهر، بأنجلز مختلفة</h2>
+    <p class="lead">زي ما اشتغلنا في E-Zone والصحوة والصانع: كل ريل ليه زاوية وهوك في أول 3 ثواني. ده توزيع مبدئي، والأفكار التفصيلية هتكون في الـ content plan.</p>
+
+    <div class="angles">
+      <article class="ang rv"><div class="top"><span class="fmt">SKETCH</span><span class="qty">4 ريل</span></div><h3>سكتشات كوميدية</h3><p>مواقف الناس عارفاها: الزوجة راجعة بشنط، والزوج بيسأل «بكام؟».</p><div class="hook">«قولتله الجاكيت بـ٤٠٠٠… طلع من ستوكيرا»</div></article>
+      <article class="ang rv"><div class="top"><span class="fmt">STREET</span><span class="qty">3 ريل</span></div><h3>خمّن السعر</h3><p>قدام السراج مول، نسأل الناس يخمنوا سعر قطعة براند، وبعدين نقول السعر الحقيقي.</p><div class="hook">«ده Zara أصلي… تفتكر بكام؟»</div></article>
+      <article class="ang rv"><div class="top"><span class="fmt">CHALLENGE</span><span class="qty">3 ريل</span></div><h3>طقم كامل بميزانية</h3><p>طقم رجالي أو حريمي أو أطفال كامل، بميزانية محددة، من جوه المحل.</p><div class="hook">«معاك ١٠٠٠ جنيه؟ هنطلعك بطقم كامل»</div></article>
+      <article class="ang rv"><div class="top"><span class="fmt">TALKING HEAD</span><span class="qty">2 ريل</span></div><h3>استوك ولا بالة؟</h3><p>صاحب المحل بيشرح الفرق، وإزاي تعرف القطعة الجديدة من التيكت والخامة.</p><div class="hook">«قبل ما تشتري استوك، اعرف الفرق ده»</div></article>
+      <article class="ang rv"><div class="top"><span class="fmt">NEW IN</span><span class="qty">2 ريل</span></div><h3>وصل حالًا</h3><p>فتح الشحنة الجديدة وتعليق القطع، عشان الناس تيجي بدري قبل ما المقاسات تخلص.</p><div class="hook">«الشحنة دي لسه نازلة… والمقاسات قليلة»</div></article>
+      <article class="ang rv"><div class="top"><span class="fmt">KIDS</span><span class="qty">2 ريل</span></div><h3>ركن الأطفال</h3><p>محتوى للأمهات: لبس العيال بالمواسم، ومقارنة سعر قطعة الأطفال بالمول.</p><div class="hook">«لبس العيال بيصغر كل ٦ شهور… فاشتريه صح»</div></article>
+    </div>
+
+    <div class="mixwrap">
+      <div class="rv">
+        <div class="mix" aria-hidden="true">
+          <i style="flex:4;background:#1C1A15"></i><i style="flex:3;background:#9A6F00"></i><i style="flex:3;background:#F2B705"></i><i style="flex:2;background:#3253D8"></i><i style="flex:2;background:#8C836F"></i><i style="flex:2;background:#D9452B"></i>
+        </div>
+        <div class="mixkey">
+          <span style="--c:#1C1A15">سكتشات 4</span><span style="--c:#9A6F00">خمّن السعر 3</span><span style="--c:#F2B705">طقم بميزانية 3</span><span style="--c:#3253D8">استوك ولا بالة 2</span><span style="--c:#8C836F">وصل حالًا 2</span><span style="--c:#D9452B">أطفال 2</span>
+        </div>
+        <p class="src">التوزيع بيتعدل كل أسبوع على حسب أداء كل أنجل في الوصول والرسايل.</p>
+      </div>
+      <div class="rule rv">
+        <p class="q">مفيش قطعة على شماعة <em>وخلاص</em>. كل قطعة ليها سعر أو موقف أو حكاية.</p>
+        <p>كل محلات الاستوك بتنزل نفس صور القطع. اللي هيخلي الناس توقف السكرول وتفتكر اسم ستوكيرا هو الناس والمواقف والسعر الواضح.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="pagebreak">
+  <div class="wrap">
+    <div class="eyebrow">Services</div>
+    <h2>الخدمات اللي هنقدمها</h2>
+    <p class="lead">من الفكرة والتصوير، لحد الإعلانات والرد على الرسايل.</p>
+
+    <div class="svc">
+      <div class="sv rv">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg>
+        <h3>Reels Content Creation</h3>
+        <p>الريلز من الفكرة لحد المونتاج.</p>
+        <ul><li>أفكار وسكريبتات وأنجلز</li><li>سكتشات كوميدية وStreet</li><li>تصوير ومونتاج وكابشن</li></ul>
+        <span class="qty">16 ريل / شهر</span>
+      </div>
+      <div class="sv rv">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+        <h3>إدارة السوشيال ميديا</h3>
+        <p>فيسبوك وإنستجرام، وإطلاق حساب تيك توك.</p>
+        <ul><li>Content plan شهري</li><li>جدولة ونشر</li><li>كابشن وهاشتاجات</li></ul>
+        <span class="qty">3 منصات</span>
+      </div>
+      <div class="sv rv">
+        <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 15l4-4 4 4 3-3 5 5"/><circle cx="15" cy="9" r="1.5"/></svg>
+        <h3>تصميمات يومية</h3>
+        <p>بوستات وستوريز للعروض والجديد.</p>
+        <ul><li>بوست أو ستوري كل يوم</li><li>تصميمات العروض والمواسم</li><li>هوية بصرية ثابتة للصفحة</li></ul>
+        <span class="qty">تصميم يوميًا</span>
+      </div>
+      <div class="sv rv">
+        <svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+        <h3>فوتوشوت المنتجات</h3>
+        <p>تصوير القطع الجديدة بشكل احترافي.</p>
+        <ul><li>صور للقطع والأطقم</li><li>صور للكاروسيل والإعلانات</li><li>تصوير جوه الفرع</li></ul>
+        <span class="qty">شوت شهري</span>
+      </div>
+      <div class="sv rv">
+        <svg viewBox="0 0 24 24"><path d="M3 11l14-6v14L3 13z"/><path d="M7 13v5h3"/><path d="M20 9v6"/></svg>
+        <h3>إدارة إعلانات Meta</h3>
+        <p>حملات رسايل ووصول حوالين الفرع، ومتابعة يومية.</p>
+        <ul><li>إعداد الحساب والـ Pixel</li><li>اختبار الأنجلز والكريتف</li><li>تقرير أسبوعي بالأرقام</li></ul>
+        <span class="qty">فيسبوك + إنستجرام</span>
+      </div>
+      <div class="sv rv">
+        <svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+        <h3>Growth & Performance</h3>
+        <p>الحاجات اللي بتحوّل المتابعة لزيارات.</p>
+        <ul><li>إعداد Meta Business Agent</li><li>Google Business Profile ونظام تقييمات</li><li>تجهيز إنستجرام وتيك توك</li></ul>
+        <span class="qty">ضمن الباقة</span>
+      </div>
+      <div class="sv extra rv">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg>
+        <h3>ويب سايت / Landing Page</h3>
+        <p>صفحة مبدئية بالتشكيلة والعنوان وزرار واتساب. ممكن نبدأها في أي وقت.</p>
+        <span class="qty">بتكلفة منفصلة، مش ضمن الباقة</span>
+      </div>
+    </div>
+
+    <div class="growth">
+      <div class="agent rv">
+        <h3>Meta Business Agent</h3>
+        <p class="sub">مساعد ذكاء اصطناعي من ميتا بيرد على رسايل ماسنجر وإنستجرام وواتساب باسم الصفحة. هنجهزه بمعلومات المحل: العنوان، المواعيد، الأقسام، والأسئلة المتكررة.</p>
+        <div class="chat" id="chat">
+          <div class="bub c">لو سمحت فيه جواكت رجالي مقاس XL؟ والمحل فين بالظبط؟</div>
+          <div class="bub a"><small>STOCKERA · BUSINESS AI</small>أيوه فيه تشكيلة جواكت شتوي رجالي، والمقاسات بتتجدد مع كل شحنة. المحل في مدينة نصر قدام السراج مول، ومفتوح يوميًا.</div>
+          <div class="bub c">طيب ممكن أعرف السعر؟</div>
+          <div class="bub a"><small>STOCKERA · BUSINESS AI</small>هحولك لحد من فريق المحل يبعتلك الصور والأسعار المتاحة دلوقتي.</div>
+        </div>
+        <p class="hand">الأسئلة اللي محتاجة سعر أو صورة لقطعة معينة بتتحول لحد من فريق المحل. الرد السريع جزء من البيع، فلازم يكون فيه moderator من جوه الفرع.</p>
+      </div>
+
+      <div class="adplan rv">
+        <h3>شكل الإعلانات في أول شهر</h3>
+        <p class="sub">حساب جديد، فهنبدأ بهيكل بسيط وقليل، ونصرف أكتر على التجربة في أول أسابيع.</p>
+        <div class="camps">
+          <div class="camp"><span class="k">EG_META_MSG_NasrCity-5km_EUstock_202611</span><b>حملة رسايل حوالين الفرع</b><p>ماسنجر وواتساب، لنطاق حوالين السراج مول. الهدف رسالة بتتحول لزيارة.</p></div>
+          <div class="camp"><span class="k">EG_META_REACH_NasrCity_Reels_202611</span><b>حملة وصول للريلز</b><p>نوصّل أحسن ريلز لأهل المنطقة، ونبني جمهور حقيقي بدل المتابعين المتشتريين.</p></div>
+          <div class="camp"><span class="k">EG_META_MSG_Retarget-Viewers_Offer_202611</span><b>ريتارجت بالعروض</b><p>للي شاف الريلز أو تفاعل مع الصفحة، بعرض الأسبوع.</p></div>
+        </div>
+        <div class="split" aria-hidden="true"><i style="flex:40;background:var(--gold)">40% أساسي</i><i style="flex:40;background:var(--gold-2)">40% تجربة</i><i style="flex:20;background:#8C836F">20% أفكار</i></div>
+        <div class="splitkey"><span>توزيع الميزانية في أول 4 أسابيع</span><span>بيتظبط كل أسبوعين حسب تكلفة الرسالة</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MONTH ============ -->
+<section id="month" class="paper pagebreak">
+  <div class="wrap">
+    <div class="eyebrow">Month 01</div>
+    <h2>أول شهر: نطلق، ونقيس، ونحسّن كل أسبوع</h2>
+    <p class="lead">بنهاية الشهر هنكون عارفين أنهي أنجل وأنهي جمهور بيجيب رسايل وزيارات بأقل تكلفة.</p>
+    <div class="month">
+      <div class="wk rv"><div class="n"><span>WEEK</span><b>1</b></div><h3>التجهيز</h3><ul><li>Google Business Profile</li><li>تجهيز إنستجرام وتيك توك</li><li>أول يوم تصوير وفوتوشوت</li><li>إعداد Business Agent</li></ul></div>
+      <div class="wk rv"><div class="n"><span>WEEK</span><b>2</b></div><h3>الإطلاق</h3><ul><li>نزول أول ريلز</li><li>تشغيل حملة الرسايل والوصول</li><li>بداية طلب التقييمات من العملاء</li></ul></div>
+      <div class="wk rv"><div class="n"><span>WEEK</span><b>3</b></div><h3>التحسين</h3><ul><li>نكبّر الأنجلز اللي شغالة</li><li>نوقف اللي تكلفتها عالية</li><li>تشغيل الريتارجت بالعروض</li></ul></div>
+      <div class="wk rv"><div class="n"><span>WEEK</span><b>4</b></div><h3>المراجعة</h3><ul><li>تقرير بالأرقام</li><li>تحديد الـ CPA المستهدف</li><li>خطة الشهر التاني</li></ul></div>
+    </div>
+    <div class="rail" aria-hidden="true"><i></i></div>
+
+    <div class="kpis">
+      <div class="kpi rv"><span class="mono">KPI 01</span><b>تكلفة الرسالة</b><p>الرقم اللي هنحكم بيه على الإعلانات</p></div>
+      <div class="kpi rv"><span class="mono">KPI 02</span><b>الزيارات من الإعلان</b><p>كود أو سؤال «عرفتنا منين؟» في الكاشير</p></div>
+      <div class="kpi rv"><span class="mono">KPI 03</span><b>تقييمات جوجل</b><p>من صفر لأول 50 تقييم حقيقي</p></div>
+      <div class="kpi rv"><span class="mono">KPI 04</span><b>وصول الريلز في المنطقة</b><p>جمهور حقيقي من مدينة نصر</p></div>
+      <div class="kpi rv"><span class="mono">KPI 05</span><b>سرعة الرد</b><p>أقل من 5 دقايق في وقت الشغل</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PACKAGE ============ -->
+<section id="package" class="pagebreak">
+  <div class="wrap">
+    <div class="eyebrow">Package</div>
+    <h2>باقة أول شهر</h2>
+    <p class="lead">باقة واحدة فيها الخطة كاملة. ميزانية الإعلانات بتتدفع لميتا مباشرة ومش محسوبة في سعر الباقة.</p>
+
+    <div class="pkg">
+      <div class="offer rv">
+        <div class="head">
+          <div><small>STOCKERA · LAUNCH</small><h3>باقة الإطلاق</h3><p>كل اللي محتاجه المحل عشان يتعرف في مدينة نصر.</p></div>
+          <div class="pricetag"><b>40,000</b><span>ج.م / شهر</span></div>
+        </div>
+        <ul>
+          <li><i>✓</i>16 ريل في الشهر بأفكار وسكتشات وأنجلز</li>
+          <li><i>✓</i>تصوير ومونتاج الريلز</li>
+          <li><i>✓</i>إدارة فيسبوك وإنستجرام</li>
+          <li><i>✓</i>إطلاق وإدارة تيك توك</li>
+          <li><i>✓</i>تصميمات يومية</li>
+          <li><i>✓</i>فوتوشوت للمنتجات</li>
+          <li><i>✓</i>إدارة إعلانات Meta</li>
+          <li><i>✓</i>إعداد Meta Business Agent</li>
+          <li><i>✓</i>Google Business Profile ونظام تقييمات</li>
+          <li><i>✓</i>Content plan شهري</li>
+          <li><i>✓</i>تقرير أسبوعي بالأرقام</li>
+          <li><i>✓</i>دليل ردود للـ moderator</li>
+        </ul>
+        <div class="foot">
+          <div><span>سعر الباقة</span><b>40,000 ج.م / شهر</b></div>
+          <div><span>ميزانية الإعلانات المقترحة</span><b>من 15,000 ج.م / شهر</b></div>
+          <div class="tot"><span>بتتدفع للمنصة مباشرة</span><span>منفصلة</span></div>
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="box dash rv"><span class="tagline">EXTRA</span><b>ويب سايت أو Landing Page</b><p>صفحة مبدئية بالأقسام والعنوان وزرار واتساب، بتسعير منفصل حسب الشكل المطلوب.</p></div>
+        <div class="box rv"><b>محتاجين منكم</b><p>ميعاد تصوير في الفرع، وصلاحيات على الصفحات، وحد من فريق المحل يرد على الرسايل بسرعة ويسجل العملاء اللي جايين من الإعلان.</p></div>
+        <div class="box rv"><b>عن المتابعين</b><p>مش هنشتري متابعين تاني. كل متابع جديد هيكون من الريلز والإعلانات، عشان الصفحة يبقى ليها جمهور بيشتري.</p></div>
+      </div>
+    </div>
+
+    <div class="next rv">
+      <h2>الخطوة الجاية</h2>
+      <p>نتفق على الباقة، ونحدد أول يوم تصوير في الفرع، وبعدها نسلمكم الـ content plan الكامل لأول شهر.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span>ستوكيرا · استوكات ملابس أوروبية · مدينة نصر، قدام السراج مول</span><span>مقدم من Sahab Agency · أكتوبر 2026</span></div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // progress bar
+  var prog=document.getElementById('prog');
+  function onScroll(){var h=document.documentElement.scrollHeight-innerHeight;prog.style.transform='scaleX('+(h>0?scrollY/h:0)+')';}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  if(reduce||!('IntersectionObserver' in window))return;
+  root.classList.add('js');
+  // reveal: only items below the fold start lifted, so the first frame is complete
+  var items=[].slice.call(document.querySelectorAll('.rv'));
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target);}});},{threshold:.12});
+  items.forEach(function(el,i){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');el.style.transitionDelay=(i%4)*70+'ms';io.observe(el);}});
+  // bars grow when seen
+  var bars=document.getElementById('bars');
+  var bi=[].slice.call(bars.querySelectorAll('.t i'));
+  if(bars.getBoundingClientRect().top>innerHeight){
+    var targets=bi.map(function(i){i.dataset.t=i.style.transform;return i.style.transform;});
+    bi.forEach(function(i){i.style.transform='scaleX(0)';});
+    new IntersectionObserver(function(es,o){if(es[0].isIntersecting){bi.forEach(function(i,k){i.style.transitionDelay=k*80+'ms';i.style.transform=targets[k];});o.disconnect();}},{threshold:.3}).observe(bars);
+  }
+  // chat plays when seen
+  var chat=document.getElementById('chat');
+  new IntersectionObserver(function(es,o){if(es[0].isIntersecting){chat.classList.add('play');o.disconnect();}},{threshold:.4}).observe(chat);
+  // print: show everything in its final state
+  addEventListener('beforeprint',function(){items.forEach(function(el){el.classList.remove('pre');});bi.forEach(function(i){if(i.dataset.t)i.style.transform=i.dataset.t;});chat.classList.remove('play');});
+})();
+</script>
+
+</body></html>
